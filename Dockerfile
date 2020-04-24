@@ -6,14 +6,7 @@ RUN apt-get -y dist-upgrade
 RUN apt-get -y install git wget
 
 
-WORKDIR /usr/src/datetime2
-RUN wget http://mirrors.ctan.org/macros/latex/contrib/datetime2.zip
-RUN unzip datetime2.zip
-WORKDIR /usr/src/datetime2/datetime2
-RUN latex datetime2.ins
-RUN mkdir /usr/share/texlive/texmf-dist/tex/latex/datetime2
-RUN mv *.sty /usr/share/texlive/texmf-dist/tex/latex/datetime2
-RUN texhash
-WORKDIR /data
+COPY install_fontawesome.sh .
+RUN chmod +x install_fontawesome.sh && ./install_fontawesome.sh
 
 CMD ["/bin/bash"]
