@@ -5,4 +5,5 @@ Dockerfile with old TU Darmstadt Corporate Design Latex files installed based on
 Added:
 - git
 - datetime2
-
+- update fontawesome
+- biber
