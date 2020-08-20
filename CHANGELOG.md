@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Extract installation of datetime2 to script.
 - Update fontawesome to latest.
 - Install biber.
+- Install make.
 
 ## [1.0.0] - 2020-04-13
 
